@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/style.css">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     
+    
+</head>
+
+
+<body>
+    <div class="card-panel teal lighten-2">
+        <h3>Weather Dashboard</h3>
+    </div>
+    <div class="row">
+        <div class="col s4">   
+            <div>
+                <h5>Search for a City</h5>
+                <input type = "text"id ="searchbar"></input>
+                <button onClick="search()">Search</button> 
+            </div>
+
+            <div>
+            <button onClick= "getApi('Ventura')"class="city">Ventura
+            </button>
+            <div>
+                <button onClick="getApi('Santa Maria')"class="city">Santa Maria</button></div>
+            <div>
+                <button onClick="getApi('Nipomo')"class="city">Nipomo</button></div>
+            <div>
+                <button onClick="getApi('Los Angeles')"class="city">Los Angeles</button></div>
+            <div>
+                    <button onClick="getApi('Nipomo')"class="city">Seattle</button></div>
+            <div>
+                    <button onClick="getApi('Los Angeles')"class="city">Bremerton</button></div>
+                
+            
+                    <h2 id="response-text"></h2> 
+            </div>
+        </div>
+        <div class="col s8">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title" id="city">Ventura</span>
+                  <p>Temperature</p>
+                  <p id="Wind">Wind</p>
+                  <p id="Humidity">Humidity</p>
+                </div>
+                
+
+            </div>
+            <div>
+                <h4>5 Day Forecast</h4>
+                <div class="row">
+                    <div class="col s2">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">10/09/2022</span>
+                              <p>Temperature</p>
+                              <p>Wind</p>
+                              <p>Humidity</p>
+                            </div>
+                            
+            
+                        </div>
+                        
+                    </div>
+                    <div class="col s2">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">10/10/2022</span>
+                              <p>Temperature</p>
+                              <p>Wind</p>
+                              <p>Humidity</p>
+                            </div>
+                            
+            
+                        </div>
+                        
+                    </div>
+                    <div class="col s2">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">10/11/2022</span>
+                              <p>Temperature</p>
+                              <p>Wind</p>
+                              <p>Humidity</p>
+                            </div>
+                            
+            
+                        </div>
+                    </div>
+                    <div class="col s2">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">10/12/2022</span>
+                              <p>Temperature</p>
+                              <p>Wind</p>
+                              <p>Humidity</p>
+                            </div>
+                            
+            
+                        </div>
+                    </div>
+                    <div class="col s2">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">10/13/2022</span>
+                              <p>Temperature</p>
+                              <p>Wind</p>
+                              <p>Humidity</p>
+                            </div>
+                            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+ 
+                    
+  
+        
+    
+    <script src="./assets/script.js"></script>
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+<!-- the above should be inside the body if I were to use them  -->
+</html> 

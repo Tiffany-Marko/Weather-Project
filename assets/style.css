@@ -1,0 +1,14 @@
+.city {
+    background-color: rgb(226, 156, 43);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+body {
+    background-color: beige;
+}
+h1 {
+    margin-left: 600px;
+    font-size: 60px;
+}
