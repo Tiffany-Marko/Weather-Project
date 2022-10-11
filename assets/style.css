@@ -5,9 +5,11 @@
     margin-bottom: 10px;
     margin-left: 10px;
     display: block; 
+    /* selects color for whole main page */
 }
 body {
     background-color: beige;
+    /* selects color for bg */
 }
 h1 {
     margin-left: 600px;

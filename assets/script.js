@@ -18,6 +18,7 @@ var searchHistory = {
   history: []
 
 }
+// keep variables organized above for quick reference. 
 
 function createSearchButton(name) {
   var searchButtonItem = document.createElement("button")
@@ -37,6 +38,7 @@ function displaySearchHistory() {
   var savedSearchHistory = localStorage.getItem("searchHistory")
   if (!savedSearchHistory) {
     var defaultCitiesArray = ["Ventura", "Santa Maria", "Bremerton", "Seattle", "San Diego", "Everett"]
+    // storing city info until cleared
 
     searchHistory.history = defaultCitiesArray
       localStorage.setItem ("searchHistory",  JSON.stringify(searchHistory))
